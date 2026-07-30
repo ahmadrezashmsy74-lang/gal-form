@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم نوبت مشاوره حقوقی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        .container {
+            max-width: 480px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            text-align: center;
+            color: #1b4b7a;
+        }
+        p.subtitle {
+            font-size: 13px;
+            text-align: center;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .row-2 {
+            display: flex;
+            gap: 8px;
+        }
+        .row-2 > div {
+            flex: 1;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            border: none;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #1b4b7a, #00b4b0);
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .note {
+            font-size: 11px;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>نوبت مشاوره حقوقی</h1>
+    <p class="subtitle">لطفاً اطلاعات زیر را با دقت وارد کنید تا با شما هماهنگ شود.</p>
+
+    <!-- فرم ارسال به ایمیل -->
+    <form action="https://formsubmit.co/ahmadrezashmsy74@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="درخواست نوبت مشاوره حقوقی جدید">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label>نام و نام خانوادگی *</label>
+        <input type="text" name="نام کامل" required placeholder="مثلاً: علی رضایی">
+
+        <label>شماره موبایل *</label>
+        <input type="tel" name="شماره موبایل" required placeholder="مثلاً: 09xxxxxxxxx">
+
+        <label>راه ارتباطی ترجیحی</label>
+        <select name="راه ارتباطی">
+            <option value="تماس تلفنی">تماس تلفنی</option>
+            <option value="واتساپ">واتساپ</option>
+            <option value="تلگرام">تلگرام</option>
+        </select>
+
+        <label>نوع پرونده حقوقی *</label>
+        <select name="نوع پرونده" required>
+            <option value="">انتخاب کنید...</option>
+            <option value="خانواده">خانواده</option>
+            <option value="کیفری">کیفری</option>
+            <option value="حقوقی">حقوقی</option>
+            <option value="ملکی و املاک">ملکی و املاک</option>
+            <option value="ثبتی و اسناد">ثبتی و اسناد</option>
+            <option value="سایر">سایر</option>
+        </select>
+
+        <div class="row-2">
+            <div>
+                <label>تاریخ پیشنهادی *</label>
+                <input type="date" name="تاریخ پیشنهادی" required>
+            </div>
+            <div>
+                <label>ساعت پیشنهادی *</label>
+                <input type="time" name="ساعت پیشنهادی" required>
+            </div>
+        </div>
+
+        <label>نوع مشاوره *</label>
+        <select name="نوع مشاوره" required>
+            <option value="حضوری">حضوری</option>
+            <option value="آنلاین">آنلاین</option>
+        </select>
+
+        <label>شرح کوتاه موضوع *</label>
+        <textarea name="شرح پرونده" required placeholder="به صورت خلاصه بنویسید مشکل چیست..."></textarea>
+
+        <label>توضیحات تکمیلی</label>
+        <textarea name="توضیحات تکمیلی" placeholder="اگر نکته‌ای لازم است بدانیم..."></textarea>
+
+        <button type="submit">ثبت درخواست نوبت</button>
+
+        <p class="note">
+            پس از ارسال فرم، ظرف مدت کوتاهی با شما تماس گرفته می‌شود.
+        </p>
+    </form>
+</div>
+
+</body>
+</html>
